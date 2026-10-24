@@ -82,7 +82,7 @@ function Navbar() {
             )
           })}
           {/*Change Language*/}
-          <li>
+          <li className="mx-auto">
             <LanguageSelector />
           </li>
         </ul>

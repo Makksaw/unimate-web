@@ -3,5 +3,9 @@
   "navbarFeature": "Fonctionnalités",
   "navbarAbout": "À propos d'UniMate",
   "navbarFAQ": "FAQ",
-  "heroMotivationalText": "Tu en as marre de parcourir ton navigateur pour trouver tous les liens utiles pour tes études ?"
+  "heroHeadlineText": "La vie universitaire,",
+  "heroHighlightedText": "Simplifiée",
+  "heroDescriptionText": "Votre compagnon tout-en-un pour la vie étudiante. Découvrez des opportunités, organisez vos études et connectez-vous avec d’autres étudiants.",
+  "heroBadgeCreatedText": "Créé en Belgique",
+  "heroBadgeBuildText": "Par les étudiants, pour les étudiants."
 }

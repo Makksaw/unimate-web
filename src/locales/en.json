@@ -3,5 +3,9 @@
   "navbarFeature": "Features",
   "navbarAbout": "About UniMate",
   "navbarFAQ": "FAQ",
-  "heroMotivationalText": "Tired of surfing browser to find all the studying links?"
+  "heroHeadlineText": "Your University Life,",
+  "heroHighlightedText": "Simplified",
+  "heroDescriptionText": "Your all-in-one companion for student life. Find opportunities, organize your studies, and connect with others.",
+  "heroBadgeCreatedText": "Created in Belgium",
+  "heroBadgeBuildText": "Build for students, by students"
 }

@@ -22,7 +22,7 @@ function LanguageSelector() {
       allowHover
     >
       <MenuHandler>
-        <Button className="flex items-center gap-2 outline-none focus:outline-none">
+        <Button className="flex items-center gap-2 outline-none focus:outline-none text-base">
           {languages.find((lang) => lang.includes(i18n.language)).split(" ")[0]}{" "}
           {i18n.language.toUpperCase()}
           <ChevronDownIcon
@@ -33,13 +33,13 @@ function LanguageSelector() {
           />
         </Button>
       </MenuHandler>
-      <MenuList className="bg-stone-900 border rounded-lg w-20 border-neutral-700 text-white z-50 outline-none focus:outline-none">
+      <MenuList className="bg-stone-900 border rounded-lg w-24 border-neutral-700 text-white z-50 outline-none focus:outline-none">
         {languages.map((lang) => {
           const decodedLang = lang.split(" ")[1]
           return (
             <MenuItem
               key={decodedLang}
-              className="font-medium"
+              className="font-medium py-2"
               onClick={() => {
                 i18n.changeLanguage(decodedLang)
                 setOpenMenu(false)

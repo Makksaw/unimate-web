@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+@keyframes gradient {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 4s linear infinite;
+}
