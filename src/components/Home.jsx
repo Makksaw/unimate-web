@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next"
+import HomePhones from "./HomePhones"
 
 function Home() {
   const { t } = useTranslation()
@@ -34,7 +35,7 @@ function Home() {
       </div>
 
       <div className="right-side text-white w-full lg:w-1/2 flex items-center justify-center">
-        Two
+        <HomePhones />
       </div>
     </div>
   )
