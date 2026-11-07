@@ -1,0 +1,135 @@
+.rm-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 0;
+}
+
+.rm-label {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.rm-row {
+  display: flex;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+}
+
+.rm-track {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  gap: 16px;
+  padding-right: 16px;
+  animation: rm-scroll 40s linear infinite;
+}
+
+.rm-row:hover .rm-track {
+  animation-play-state: paused;
+}
+
+@keyframes rm-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.rm-card {
+  width: 288px;
+  flex-shrink: 0;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+
+.rm-card:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rm-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rm-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #c084fc, #d946ef);
+}
+
+.rm-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.rm-stars {
+  display: flex;
+}
+
+.rm-star {
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.rm-star--on {
+  color: #facc15;
+}
+
+.rm-title {
+  margin: 12px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rm-text {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rm-track {
+    animation: none;
+  }
+}

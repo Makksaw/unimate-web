@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import HomePhones from "./HomePhones"
+import { buttons } from "../data/buttons"
 
 function Home() {
   const { t } = useTranslation()
@@ -22,8 +23,17 @@ function Home() {
           {t("heroDescriptionText")}
         </div>
 
-        <div className="buttons flex flex-col sm:flex-row gap-3 mt-5"></div>
-
+        <div className="buttons flex flex-col sm:flex-row gap-3 mt-5">
+          {buttons.map((button) => (
+            <a key={button.url} className="no-underline" href={button.url}>
+              <img
+                className="h-14 w-auto"
+                src={button.image}
+                alt={button.alt}
+              />
+            </a>
+          ))}
+        </div>
         <div className="info-badges flex flex-wrap mt-5 items-center text-xs sm:text-sm gap-2 font-medium">
           <span className="inline-flex bg-transparent px-3.5 py-1 rounded-full border border-purple-400 items-center">
             {t("heroBadgeCreatedText")}
